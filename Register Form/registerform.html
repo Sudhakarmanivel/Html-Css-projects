@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registerform.css">
+</head>
+<body>
+    <h2>Registration Form</h2>
+
+    <form action="" method="post">
+
+        <!-- Name-->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="fullname" placeholder="Enter your full name" required>
+        <br><br>
+
+        <!-- Email-->
+         <label for="email">Email:</label><br>
+         <input type="email" id="email" name="email" placeholder="Enter your email" required>
+         <br><br>
+
+         <!--Age-->
+         <label for="age">Age:</label><br>
+         <input type="number" id="age" name="age" placeholder="Enter your age" required>
+         <br><br>
+
+         <!--Date of Birth-->
+         <label for="dob">Date of Birth:</label><br>
+         <input type="date" id="dob" name="dob" required>
+         <br><br>
+
+         <!--Gender-->
+         <label>Gender:</label><br>
+         <input type="radio" id="male" name="gender" value="Male" required>
+         <label for="male">Male</label>
+
+         <input type="radio" id="female" name="gender" value="Female">
+         <label for="female">Female</label>
+
+         <input type="radio" id="others" name="gender" value="Others">
+         <label for="others">Others</label>
+         <br><br>
+
+         <!--Skills-->
+         <label>Skills:</label><br>
+         <input type="checkbox" id="java" name="skills" value="Java">
+         <label for="java">Java</label>
+
+         <input type="checkbox" id="html" name="skills" value="Html">
+         <label for="html">Html</label>
+
+         <input type="checkbox" id="css" name="skills" value="Css">
+         <label for="css">Css</label>
+         <br><br>
+
+         <!--City Dropdown-->
+         <label for="city">City:</label><br>
+         <select name="city" id="city" required>
+            <option value="">--Select City--</option>
+            <option value="chennai">Chennai</option>
+            <option value="bangalore">Bangalore</option>
+            <option value="hyderabed">Hyderabed</option>
+         </select>
+         <br><br>
+
+         <!--Password-->
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password" minlength="8" required>
+         <br><br>
+
+         <!--Confirm Password-->
+         <label for="confirm password">Confirm Password:</label>
+         <input type="password" id="confirm password" name="comfirm password" minlength="8" required>
+         <br><br>
+
+         <!--Resume Upload-->
+         <label for="resume">Resume:</label>
+         <input type="file" id="resume" name="resume">
+         <br><br>
+
+         <!--Terms-->
+         <input type="checkbox" id="terms" required>
+         <label for="terms">I agree to the Terms & Conditions</label>
+         <br><br>
+
+         <!--Submit Button-->
+         <button type="submit">Register</button>
+    </form>
+    
+</body>
+</html>
